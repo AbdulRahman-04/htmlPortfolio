@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rahman Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+  <link rel="manifest" href="./img/site.webmanifest">
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Abdul Rahman</div>
+      <div class="hamburger" onclick="toggleMenu()">
+        <!-- <i class="fa-solid fa-bars"></i> -->
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="https://github.com/AbdulRahman-04/reactPortfolio">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Hey, I'm Abdul Rahman</h1>
+      <p>I'm a passionate web developer creating modern and responsive websites.</p>
+      <a href="#projects" class="btn">View Projects</a>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>I specialize in front-end and back-end web development using HTML, CSS, JavaScript, React, and Node.js.</p>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-list">
+      <div class="project">
+        <h3>Project 1</h3>
+        <p>Short description of the project.</p>
+      </div>
+      <div class="project">
+        <h3>Project 2</h3>
+        <p>Short description of the project.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: abdulrahman.81869@gmail.com</p>
+    <p>LinkedIn: linkedin.com/in/syedabdulrahman04</p>
+  </section>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector(".nav-links").classList.toggle("active");
+    }
+  </script>
+</body>
+
+</html>
